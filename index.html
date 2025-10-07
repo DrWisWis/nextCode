@@ -18,7 +18,7 @@
     </header>
 
     <div class="hero">
-        <h1>Transformando Games em aprendizagem</h1>
+        <h1>Transformando Aprendizagem em Games</h1>
     </div>
 
     <main>
@@ -97,7 +97,90 @@ Usado para interações e iterações simples.</p>
     </section>
 
     <section class="exemplos" id="exemplos">
+        <h1>Exemplos</h1>
+        <div class="cards-exemplo">
+            <div class="card-exemplo">
+                <p>const produtos = [<br>
+  { nome: "Mouse", preco: 50 },<br>
+  { nome: "Teclado", preco: 120 },<br>
+  { nome: "Monitor", preco: 800 }<br>
+];<br>
+<br>
+// Aumentar o preço em 10%<br>
+const produtosAtualizados = produtos.map(p => ({<br>
+  nome: p.nome,<br>
+  preco: p.preco * 1.1<br>
+}));<br>
+<br>
+console.log(produtosAtualizados);<br>
+/*<br>
+[<br>
+  { nome: "Mouse", preco: 55 },<br>
+  { nome: "Teclado", preco: 132 },<br>
+  { nome: "Monitor", preco: 880 }<br>
+]<br>
+*/</p>
+            </div>
+            <div class="card-exemplo">
+                <p>const usuarios = [
+  { nome: "Ana", idade: 17 },
+  { nome: "Bruno", idade: 22 },
+  { nome: "Carlos", idade: 15 },
+  { nome: "Daniela", idade: 30 }
+];
 
+// Filtrar apenas maiores de idade
+const maiores = usuarios.filter(u => u.idade >= 18);
+
+console.log(maiores);
+/*
+[
+  { nome: "Bruno", idade: 22 },
+  { nome: "Daniela", idade: 30 }
+]
+*/</p>
+                </div>
+            <div class="card-exemplo">
+                <p>const pedidos = [
+  { id: 1, valor: 250 },
+  { id: 2, valor: 450 },
+  { id: 3, valor: 300 }
+];
+
+// Calcular o total das vendas
+const total = pedidos.reduce((acumulador, pedido) => acumulador + pedido.valor, 0);
+
+console.log(`Total de vendas: R$ ${total}`);
+// Total de vendas: R$ 1000
+
+// Exemplo avançado: contar quantos produtos custam acima de R$300
+const acimaDe300 = pedidos.reduce((contagem, pedido) => {
+  return pedido.valor > 300 ? contagem + 1 : contagem;
+}, 0);
+
+console.log(`Pedidos acima de R$300: ${acimaDe300}`);
+// Pedidos acima de R$300: 2</p>
+</div>
+            <div class="card-exemplo">
+                <p>const linguagens = ["JavaScript", "Python", "C#", "Java"];
+
+// Exibir lista formatada
+linguagens.forEach((ling, i) => {
+  console.log(`${i + 1} - ${ling}`);
+});
+/*
+1 - JavaScript
+2 - Python
+3 - C#
+4 - Java
+*/
+
+// Exemplo com efeito colateral (simulando log de acesso)
+linguagens.forEach(ling => {
+  console.log(`Acessando conteúdo sobre ${ling}...`);
+});</p>
+</div>
+        </div>
     </section>
 
     <section class="quiz" id="quiz">

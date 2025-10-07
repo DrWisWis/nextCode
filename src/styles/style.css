@@ -4,22 +4,87 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: rgb(8, 14, 31);
+    color: white;
+}
+
 header{
     height: 100px;
     border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 100px;
+    padding: 0px 300px;
 }
 
 header img {
     height: 100%;
 }
+
 .hero{
     background-image: url(/src/assets/maxresdefault.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1000px;
-    padding: 0px 100px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 0px 300px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    padding: 0px 300px;
+}
+
+main p {
+    max-width: 500px;
+}
+
+.theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 300px;
+}
+
+.theme .cards {
+    display: flex;
+}
+
+.theme .cards .card {
+    border: 1px solid white;
+    border-radius: 15px;
+    max-width: 350px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.theme .cards .card p{
+    margin-top: 10px;
+}
+
+.exemplos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exemplos .cards-exemplo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+}
+
+.exemplos .cards-exemplo .card-exemplo {
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 15px;
 }
